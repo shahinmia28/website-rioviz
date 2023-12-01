@@ -1,0 +1,102 @@
+/* footer section style */
+#footer {
+  background: linear-gradient(to right, #80808000, #80808000, #b4b4b400),
+    url(../images/footer-bg.jpg) center/cover no-repeat;
+  display: block;
+}
+
+/* subscribe form */
+.subscribe-now {
+  border-bottom: 2px solid #97969660;
+}
+.subscribe-title h2 {
+  color: var(--c1);
+  font-weight: 600;
+}
+.subscribe-form .form-group {
+  background: transparent;
+}
+.subscribe-form .form-group input {
+  background: transparent !important;
+  border: 3px solid var(--c1);
+  color: var(--c1) !important;
+  margin-bottom: 0px;
+}
+.subscribe-form .form-group .form-control::placeholder {
+  color: var(--c1);
+}
+.f-btn {
+  padding: 11px 20px;
+  text-align: center;
+  border-radius: 0px;
+  background: var(--c1);
+  border: none;
+  outline: none !important;
+  color: #fff;
+}
+.f-btn:hover {
+  background: var(--c2);
+}
+
+/* footer-details */
+.footer-details {
+  border-bottom: 2px solid #97969660;
+  padding: 50px 0;
+}
+.footer-data img {
+  margin-bottom: 30px;
+}
+.footer-data p {
+  color: #fff;
+}
+.footer-data .my-btn {
+  border-radius: 5px;
+  margin-left: 0px;
+}
+
+.contact-info h3 {
+  color: var(--c1);
+  font-weight: 600;
+  padding-bottom: 30px;
+  font-size: 1.8rem;
+}
+.contact-info ul li {
+  padding: 12px 0;
+}
+.contact-info ul li i {
+  margin-right: 20px;
+  color: var(--c1);
+  font-size: 1.2rem;
+}
+
+/* Latest Posts */
+.post img {
+  width: 100px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+.post-info h5 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.post:hover .post-info h5 {
+  color: var(--c1);
+}
+.post-date i {
+  color: var(--c1);
+}
+.post-date span {
+  font-size: 0.85rem;
+}
+
+/* copy right */
+.copy-right {
+  font-size: 1rem;
+}
+.footer-logo a {
+  color: #fff;
+  background: var(--c1);
+  padding: 6px 8px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+}

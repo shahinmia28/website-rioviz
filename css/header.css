@@ -1,0 +1,266 @@
+#home {
+  width: 100%;
+  height: auto;
+}
+
+/* top-bar */
+.top-bar {
+  border-bottom: var(--light-border);
+}
+.contact-bar a {
+  color: #ffffffbd;
+  font-size: 0.9rem;
+}
+.contact-bar a:hover {
+  color: #ffffff;
+}
+.email {
+  padding: 1rem;
+  border-right: var(--light-border);
+  text-align: right;
+}
+.phone {
+  padding: 1rem;
+}
+.open-time {
+  color: #ffffffbd;
+  font-size: 0.9rem;
+  padding: 1rem;
+  border-right: var(--light-border);
+}
+.social-icon i {
+  color: #ffffffbd;
+  font-size: 1rem;
+  padding: 10px;
+}
+.social-icon i:hover {
+  color: #ffffff;
+}
+
+/* nav bar */
+.nav-container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  background: #44444483;
+}
+
+.nav {
+  display: none;
+}
+.show-nav {
+  display: block;
+}
+
+.logo {
+  padding: 20px 0;
+}
+
+/* toggle menu */
+.toggle-menu {
+  cursor: pointer;
+}
+.dots {
+  display: flex;
+  width: 45px;
+  height: 13px;
+}
+.dots span {
+  margin: 3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  transition: 0.4s;
+}
+.dots .color-dot {
+  background: var(--c1);
+  transition: 0.4s;
+}
+.toggle-menu:hover .dots span {
+  background: var(--c1);
+}
+.toggle-menu:hover .color-dot {
+  background: #fff !important;
+}
+
+/*menu links */
+.link {
+  display: block;
+  margin: auto 20px;
+  padding: 10px 0;
+}
+.link a {
+  color: #fff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+.link a:hover {
+  color: var(--c1);
+}
+.link i {
+  margin: auto;
+  margin-left: 5px;
+  font-size: 0.75rem;
+}
+.fa-minus {
+  display: none;
+}
+.link a:hover .fa-minus {
+  display: inline;
+}
+.link a:hover .fa-plus {
+  display: none;
+}
+
+/* sub-menu */
+.sub-menu {
+  display: none;
+  position: absolute;
+  padding-top: 10px;
+  margin-top: 10px;
+  background: #44444483;
+  text-align: left;
+  width: 200px;
+  text-transform: uppercase;
+  transition: 0.4s;
+  animation: menuAnim 0.5s ease-in-out;
+}
+@keyframes menuAnim {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 200px;
+  }
+}
+.link:hover .sub-menu {
+  display: block;
+}
+.sub-menu a {
+  display: block;
+  margin: 0;
+  padding: 8px 12px;
+  border-bottom: 1px solid #83838338;
+}
+
+@media screen and (max-width: 972px) {
+  .nav-items {
+    width: 300px;
+    margin-left: 0 !important;
+  }
+  .show-nav .link .sub-menu {
+    left: 100px;
+    transition: 0.4s;
+  }
+}
+
+/* HERO SLIDER */
+.overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #808080b7, #80808060, #b4b4b400),
+    url(../images/hero-slider-1.jpg) center/cover no-repeat;
+  display: block;
+}
+
+.overlay2 {
+  top: 0;
+  left: 0;
+  position: relative;
+  background: linear-gradient(to top, #808080c7, #80808067, #b4b4b400),
+    url(../images/hero-slider-3.jpg) center/cover no-repeat;
+  display: block;
+}
+
+.caption-1 {
+  width: 72%;
+}
+.header-carousal .carousel-caption span,
+h1,
+p {
+  display: block;
+  margin: 30px 0;
+  letter-spacing: 1.5;
+}
+.header-carousal .carousel-caption span {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.header-carousal .carousel-caption h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+.header-carousal .carousel-caption p {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 992px) {
+  .caption-1 {
+    width: 100%;
+  }
+  .caption-1 span,
+  h1,
+  p {
+    margin: 10px 0;
+  }
+  .caption-1 span {
+    font-size: 0.85rem;
+  }
+  .caption-1 h1 {
+    font-size: 2rem;
+  }
+  .caption-1 p {
+    font-size: 0.85rem;
+    letter-spacing: 1;
+  }
+  .caption-1,
+  .caption-2 .my-btn {
+    letter-spacing: 1;
+    font-size: 0.8rem;
+    padding: 12px 20px;
+  }
+  .caption-1 .btn-outline {
+    padding: 11px 19px;
+  }
+  .caption-2 h1 {
+    font-size: 2.5rem;
+  }
+}
+.header-carousal .carouselBtn {
+  display: grid;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff9c;
+  border: 2.5px solid #ffffff;
+  opacity: 1;
+  transition: 0.4s;
+}
+.header-carousal .carousel-control-prev {
+  left: 90%;
+  top: 55%;
+}
+.header-carousal .carouselBtn span {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+  border-radius: 50%;
+  margin: auto;
+  transition: 0.4s;
+}
+
+.header-carousal .carouselBtn:hover {
+  background: transparent;
+  border-color: var(--c2);
+}
+.header-carousal .carouselBtn:hover span {
+  background: var(--c1);
+}
